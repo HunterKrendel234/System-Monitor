@@ -18,7 +18,7 @@
   - Сеть: скорость загрузки/отправки, IP-адреса
 
 - **Оверлей:**  
-  Лёгкий и настраиваемый оверлей для отображения ключевых параметров поверх всех окон.
+  Лёгкий оверлей для отображения ключевых параметров поверх всех окон.
 
 - **Автозапуск:**  
   Гибкое управление автозапуском.
@@ -27,7 +27,7 @@
   Быстрое включение/выключение оверлея по настраиваемой горячей клавише.
 
 - **Локализация:**  
-  Полная поддержка русского и английского языков. Легко добавить свой перевод.
+  Полная поддержка русского и английского языков.
 
 - **Гибкие настройки:**  
   Всё настраивается через удобное окно настроек: язык, автозапуск, горячая клавиша, позиция оверлея и др.
@@ -87,7 +87,7 @@
   - Network: download/upload speed, IP addresses
 
 - **Overlay:**  
-  Lightweight and customizable overlay for displaying key parameters above all windows.
+  Lightweight overlay for displaying key parameters above all windows.
 
 - **Autostart:**  
   Flexible autostart management.
@@ -96,7 +96,7 @@
   Quick overlay toggle with a customizable hotkey.
 
 - **Localization:**  
-  Full support for Russian and English. Easy to add your own translation.
+  Full support for Russian and English.
 
 - **Flexible settings:**  
   Everything is configurable via a convenient settings window: language, autostart, hotkey, overlay position, and more.
