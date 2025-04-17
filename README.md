@@ -21,7 +21,7 @@
   Лёгкий и настраиваемый оверлей для отображения ключевых параметров поверх всех окон.
 
 - **Автозапуск:**  
-  Гибкое управление автозапуском через Task Scheduler и реестр.
+  Гибкое управление автозапуском.
 
 - **Горячая клавиша:**  
   Быстрое включение/выключение оверлея по настраиваемой горячей клавише.
@@ -90,7 +90,7 @@
   Lightweight and customizable overlay for displaying key parameters above all windows.
 
 - **Autostart:**  
-  Flexible autostart management via Task Scheduler and registry.
+  Flexible autostart management.
 
 - **Hotkey:**  
   Quick overlay toggle with a customizable hotkey.
