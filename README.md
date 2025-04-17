@@ -1,8 +1,9 @@
-# SysMonitor
+#  System Monitor
+
 
 ## 🇷🇺 Описание
 
-**SysMonitor** — это современный системный монитор для Windows с поддержкой оверлея, автозапуска, гибкой локализации и удобным интерфейсом.
+**System Monitor** — это современный системный монитор для Windows с поддержкой оверлея, автозапуска, гибкой локализации и удобным интерфейсом.
 
 ---
 
@@ -70,9 +71,8 @@
 
 ## 🇬🇧 English
 
-# SysMonitor
 
-**SysMonitor** is a modern system monitor for Windows with overlay support, autostart, flexible localization, and a user-friendly interface.
+**System Monitor** is a modern system monitor for Windows with overlay support, autostart, flexible localization, and a user-friendly interface.
 
 ---
 
