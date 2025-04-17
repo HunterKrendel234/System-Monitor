@@ -84,9 +84,6 @@
     "overlay_position_x": "Положение оверлея X:",
     "overlay_position_y": "Положение оверлея Y:",
     "overlay_position_group": "Положение оверлея",
-    "update_available": "Доступно обновление:",
-    "update_question": "Обновить сейчас?",
-    "update_title": "Обновление",
     "version": "Версия"
   },
   "en": {
@@ -174,9 +171,6 @@
     "overlay_position_x": "Overlay position X:",
     "overlay_position_y": "Overlay position Y:",
     "overlay_position_group": "Overlay position",
-    "update_available": "Update available:",
-    "update_question": "Update now?",
-    "update_title": "Update",
     "version": "Version"
   }
 }

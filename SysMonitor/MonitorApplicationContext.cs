@@ -66,7 +66,6 @@ namespace MonitorTray
             SystemEvents.SessionSwitch += SystemEvents_SessionSwitch;
 
             mainWindow = new MainWindow(this);
-            CheckForUpdates();
         }
 
         #region Config
@@ -470,56 +469,5 @@ namespace MonitorTray
         }
 
         public Config Config => config;
-
-        private async void CheckForUpdates()
-        {
-            try
-            {
-                using (var client = new System.Net.Http.HttpClient())
-                {
-                    client.DefaultRequestHeaders.Add("User-Agent", "SysMonitor-Updater");
-                    var response = await client.GetAsync("https://api.github.com/repos/HunterKrendel234/System-Monitor/releases/latest");
-                    if (!response.IsSuccessStatusCode) return;
-                    var json = await response.Content.ReadAsStringAsync();
-                    var latestTag = System.Text.Json.JsonDocument.Parse(json).RootElement.GetProperty("tag_name").GetString();
-                    if (string.IsNullOrWhiteSpace(latestTag)) return;
-                    if (latestTag.TrimStart('v') == AppVersion) return;
-                    var assets = System.Text.Json.JsonDocument.Parse(json).RootElement.GetProperty("assets");
-                    string zipUrl = null;
-                    foreach (var asset in assets.EnumerateArray())
-                    {
-                        var name = asset.GetProperty("name").GetString();
-                        if (name == "System Monitor.zip")
-                        {
-                            zipUrl = asset.GetProperty("browser_download_url").GetString();
-                            break;
-                        }
-                    }
-                    if (zipUrl == null) return;
-                    var result = MessageBox.Show($"{T("update_available")} {AppVersion} → {latestTag}\n{T("update_question")}", T("update_title"), MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-                    if (result == DialogResult.Yes)
-                    {
-                        string tempZip = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "System Monitor.zip");
-                        using (var zipStream = await client.GetStreamAsync(zipUrl))
-                        using (var fs = new FileStream(tempZip, FileMode.Create, FileAccess.Write))
-                        {
-                            await zipStream.CopyToAsync(fs);
-                        }
-                        string batPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "update_sysmonitor.bat");
-                        if (!File.Exists(batPath))
-                        {
-                            File.WriteAllText(batPath, "@echo off\r\ntaskkill /im \"SysMonitor.exe\" /f\r\ntimeout /t 2 >nul\r\npowershell -Command \"Expand-Archive -Force 'System Monitor.zip' .\"\r\nxcopy /y /e /h /r /c \"System Monitor\\*\" .\\\r\nrmdir /s /q \"System Monitor\"\r\ndel \"System Monitor.zip\"\r\nstart \"\" \"SysMonitor.exe\"\r\nexit\r\n");
-                        }
-                        System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
-                        {
-                            FileName = batPath,
-                            UseShellExecute = true
-                        });
-                        Application.Exit();
-                    }
-                }
-            }
-            catch { }
-        }
     }
 }
