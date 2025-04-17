@@ -42,7 +42,11 @@
 
 ### Скриншоты
 
-*(Добавьте сюда скриншоты интерфейса и оверлея)*
+![изображение](https://github.com/user-attachments/assets/9a2fb41e-1688-457a-8c73-98f431ae956e)
+![изображение](https://github.com/user-attachments/assets/73f444f9-179f-461d-bac0-71886fb105c6)
+![изображение](https://github.com/user-attachments/assets/6ac5383b-1fb9-434b-a0aa-244fd0967531)
+![изображение](https://github.com/user-attachments/assets/637e26bd-7529-4d0e-a5e0-3e531ef7294a)
+
 
 ---
 
@@ -111,7 +115,10 @@
 
 ### Screenshots
 
-*(Add screenshots of the interface and overlay here)*
+![изображение](https://github.com/user-attachments/assets/9a2fb41e-1688-457a-8c73-98f431ae956e)
+![изображение](https://github.com/user-attachments/assets/73f444f9-179f-461d-bac0-71886fb105c6)
+![изображение](https://github.com/user-attachments/assets/6ac5383b-1fb9-434b-a0aa-244fd0967531)
+![изображение](https://github.com/user-attachments/assets/637e26bd-7529-4d0e-a5e0-3e531ef7294a)
 
 ---
 
