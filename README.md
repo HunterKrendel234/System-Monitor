@@ -32,9 +32,6 @@
 - **Гибкие настройки:**  
   Всё настраивается через удобное окно настроек: язык, автозапуск, горячая клавиша, позиция оверлея и др.
 
-- **Обновления:**  
-  Проверка и загрузка новых версий прямо из приложения (автообновление).
-
 - **Открытый исходный код:**  
   Проект полностью открыт для изучения и доработки.
 
@@ -104,9 +101,6 @@
 
 - **Flexible settings:**  
   Everything is configurable via a convenient settings window: language, autostart, hotkey, overlay position, and more.
-
-- **Updates:**  
-  Check and download new versions directly from the app (auto-update).
 
 - **Open source:**  
   The project is fully open for study and improvement.
