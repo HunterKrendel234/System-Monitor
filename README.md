@@ -13,7 +13,7 @@
   - CPU: температура, загрузка, частоты, напряжения, энергопотребление
   - GPU: температура, загрузка, частоты, вентиляторы, энергопотребление, память
   - RAM: объём, частоты, информация о планках
-  - Материнская плата: температуры, вентиляторы, напряжения, информация о плате
+  - Материнская плата: температуры, информация о плате
   - Диски: температуры, загрузка, данные, SMART
   - Сеть: скорость загрузки/отправки, IP-адреса
 
@@ -82,7 +82,7 @@
   - CPU: temperature, load, clocks, voltages, power consumption
   - GPU: temperature, load, clocks, fans, power, memory
   - RAM: volume, clocks, module info
-  - Motherboard: temperatures, fans, voltages, board info
+  - Motherboard: temperatures, board info
   - Disks: temperatures, load, data, SMART
   - Network: download/upload speed, IP addresses
 
